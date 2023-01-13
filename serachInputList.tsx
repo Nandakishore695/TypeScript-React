@@ -1,6 +1,4 @@
 import React, { useState } from 'react'
-
-
 const coutry: string[] = ["Hyderabad", "Mumbai", "Chennai", "Delhi", "Bangalore",
     "Ahmedabad", "Kolkata", "Warangal"];
 
@@ -21,7 +19,6 @@ function SerachComponent() {
             <div className='search-item'>
                 <input type="search" placeholder="Type to search for something..." onKeyUp={(event) => handleSerach(event)} />
                 <br />
-
                 {stateName.map((item, index) =>
                     <ul key={index}>
                         {item}
@@ -33,5 +30,4 @@ function SerachComponent() {
         </>
     )
 }
-
 export default SerachComponent
