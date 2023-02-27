@@ -4,7 +4,7 @@ const coutry: string[] = ["Hyderabad", "Mumbai", "Chennai", "Delhi", "Bangalore"
 
 function SerachComponent() {
     const [stateName, setStateName] = useState<string[]>(coutry);
-    const handleSerach = (event: any) => {
+    const handleSerach = ({ currentTarget: { value } }) => {
         let serachItem = event.target.value;
         if (serachItem) {
             let filteredData = coutry.filter((item => {
